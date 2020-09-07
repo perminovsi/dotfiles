@@ -9,8 +9,17 @@ export ZSH="/home/user/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
+
+ZSH_THEME="spaceship"
+
+# SPACESHIP_VI_MODE_SHOW=true
+# SPACESHIP_VI_MODE_PREFIX=""
+# SPACESHIP_VI_MODE_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_VI_MODE_INSERT=""
+SPACESHIP_VI_MODE_NORMAL="[VI]"
+SPACESHIP_VI_MODE_COLOR="red"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -116,3 +125,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cls="clear"
 alias x='. ranger'
+
+
+# Settings pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
+# export http_proxy=http://192.168.4.10:8080/
+# export https_proxy=http://192.168.4.10:8080/
+
+export PATH=$PATH:/usr/local/go/bin

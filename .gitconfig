@@ -1,0 +1,7 @@
+[user]
+	email = perminovsi@ya.ru
+	name = perminov
+# [http]
+#     proxy = http://192.168.4.10:8080
+[core]
+	editor = vim

@@ -1,0 +1,41 @@
+# Всё, что выделяется мышью сразу идёт в буфер обмена
+save_to_clipboard: true # или false
+
+window:
+  padding:
+# Отступы от самой рамки терминала по x,y. У меня отступов нет.
+    x: 0
+    y: 0
+  dynamic_padding: false
+# Под декорациями имеется ввиду вид окна (transparent сделает края невидимыми)
+  decorations: full
+
+  #  startup_mode: Fullscreen # Windowed - оконный, Maximized - оконный на весь экран, Fullscreen - на весь экран
+
+# GNOME Terminal Tango Dark
+colors:
+  primary:
+    background: '0x2e3436'
+    foreground: '0xd3d7cf'
+    
+  normal:
+    black: '0x2e3436'
+    red: '0xcc0000'
+    green: '0x4e9a06'
+    yellow: '0xc4a000'
+    blue: '0x3465a4'
+    magenta: '0x75507b'
+    cyan: '0x06989a'
+    white: '0xd3d7cf'
+
+  bright:
+    black: '0x555753'
+    red: '0xef2929'
+    green: '0x8ae234'
+    yellow: '0xfce94f'
+    blue: '0x729fcf'
+    magenta: '0xad7fa8'
+    cyan: '0x34e2e2'
+    white: '0xeeeeec'
+
+backgroud_opacity: 0.5

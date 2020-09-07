@@ -1,0 +1,50 @@
+rename requirements.txt
+rename product_processing_20200816.csv
+shell nautilus
+cd ssd
+cd ..
+mkdir bound
+rename database_back
+j
+shell code .
+mkdir satproc_back
+mkdir calc_cld
+pwd
+rename __database
+cd /tmp
+mkdir
+mkdir user_data
+rename LC08_L1GT_098011_20200329_20200409_01_T2.geojson
+open_with vim
+open_with subl
+find scanex
+shell t
+find tes
+search Fmask
+ql
+rename gmxpy
+find satp
+shell pwd
+mkdir h
+mkdir back
+mkdir newlogger
+rename landsat_
+rename landsat_old
+find tem
+find satpro
+rename gmxpy_old
+q
+mkdir rdb-basics
+vim README.md
+shell vim README.md
+cd  /home/user/scanex/satproc/tests/data/stg/s2/2020/2020-07-30/S2B_MSIL2A_20200730T024549_N9999_R132_T52VFK_20200827T154106.SAFE
+cd /home/user/scanex/satproc/tests/data/stg/s2/2020/2020-07-30/S2B_MSIL2A_20200730T024549_N9999_R132_T52VFK_20200827T154106.SAFE
+rename __S2B_MSIL2A_20200730T024549_N9999_R132_T52VFK_20200827T154106.SAFE
+rename back_test_dl2a.py
+find satproc
+delete
+rename LC08_L1TP_112026_20200705_20200708_01_T1_Fmask4.tif
+open_with qgis
+open_with 
+
+shell nautilus .
