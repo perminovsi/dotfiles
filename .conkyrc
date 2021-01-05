@@ -85,6 +85,8 @@ ${font sans-serif:normal:size=8}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${
 ${fs_bar /}
 ${font sans-serif:normal:size=8}/ssd $alignc ${fs_used /ssd} / ${fs_size /ssd} $alignr ${fs_used_perc /ssd}%
 ${fs_bar /ssd}
+${font sans-serif:normal:size=8}/win $alignc ${fs_used /win} / ${fs_size /win} $alignr ${fs_used_perc /win}%
+${fs_bar /win}
 
 ${font Ubuntu:bold:size=10}NETWORK ${hr 2}
 ${font sans-serif:normal:size=8}Local IPs:${alignr}External IP:

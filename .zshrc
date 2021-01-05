@@ -125,7 +125,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cls="clear"
 alias x='. ranger'
-
+alias docker-rmi='docker rmi $(docker images -f "dangling=true" -q)'
 
 # Settings pyenv
 export PYENV_ROOT="$HOME/.pyenv"
