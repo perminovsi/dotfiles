@@ -139,4 +139,4 @@ fi
 # export http_proxy=http://192.168.4.10:8080/
 # export https_proxy=http://192.168.4.10:8080/
 
-export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:/usr/local/go/bin
