@@ -4,17 +4,15 @@ then
     nmcli radio wifi off
     nmcli c up "Scanex Wired"
     gsettings set org.gnome.system.proxy mode 'manual'
-    # echo "wired-scanex on"
-    cp ~/.gitconfig.scanex ~/.gitconfig
-    cp ~/.ssh/config.scanex ~/.ssh/config
+    ln -sfv $HOME/.dotfiles/git/gitconfig.scanex $HOME/.gitconfig
+    ln -sfv $HOME/.dotfiles/ssh/config.scanex $HOME/.ssh/config
 elif [ "$1" = "off" ]
 then
     nmcli c down "Scanex Wired"
     gsettings set org.gnome.system.proxy mode 'none'
     nmcli radio wifi on
-    cp ~/.gitconfig.main ~/.gitconfig
-    cp ~/.ssh/config.main ~/.ssh/config
-    # echo "wired-scanex off"
+    ln -sfv $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
+    ln -sfv $HOME/.dotfiles/ssh/config $HOME/.ssh/config
 else
     echo "Usage: wired-scanex on | off"
     echo ""
