@@ -1,0 +1,7 @@
+Include scanex_hosts
+
+Host yandex
+Hostname 84.201.155.104
+User user
+Port 22
+

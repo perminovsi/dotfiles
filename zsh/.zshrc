@@ -94,6 +94,8 @@ plugins=(
     colorize
     colored-man-pages
     # autojump
+    kubectl
+    asdf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,20 +125,36 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll='ls -alF'
 alias cls="clear"
 alias x='. ranger'
+alias mc='. /usr/lib/mc/mc-wrapper.sh'
 alias docker-rmi='docker rmi $(docker images -f "dangling=true" -q)'
+alias ls='exa'
 
 # Settings pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
+#  eval "$(pyenv virtualenv-init -)"
 fi
 
 # export http_proxy=http://192.168.4.10:8080/
 # export https_proxy=http://192.168.4.10:8080/
 
 # export PATH=$PATH:/usr/local/go/bin
+
+# Settings nvm (Node Version Manager)
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+source <(kubectl completion zsh)
+# alias k=kubectl
+complete -F __start_kubectl k

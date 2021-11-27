@@ -1,0 +1,8 @@
+[user]
+	email = perminovsi@ya.ru
+	name = perminov
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[credential]
+	helper = cache
