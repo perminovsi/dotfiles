@@ -91,6 +91,10 @@ Plug 'nvim-lua/plenary.nvim'  " for telescope
 
 Plug 'Pocco81/auto-save.nvim'
 
+Plug 'lewis6991/gitsigns.nvim'
+
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 Plug 'xolox/vim-misc'
@@ -271,14 +275,25 @@ require'nvim-treesitter.configs'.setup {
 EOF
 
 
-" Telescope fzf plugin
 lua << EOF
 require('telescope').load_extension('fzf')
-EOF
-
-" AutoSave
-lua << EOF
 require("auto-save").setup({ enabled = true })
-EOF
+require('gitsigns').setup()
 
+require("toggleterm").setup{
+    open_mapping = [[<c-\>]],
+    -- direction = 'float',
+}
+
+function _G.set_terminal_keymaps()
+  local opts = {buffer = 0}
+  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
+  vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+  vim.keymap.set('t', '<C-w>h', [[<Cmd>wincmd h<CR>]], opts)
+  vim.keymap.set('t', '<C-w>j', [[<Cmd>wincmd j<CR>]], opts)
+  vim.keymap.set('t', '<C-w>k', [[<Cmd>wincmd k<CR>]], opts)
+  vim.keymap.set('t', '<C-w>l', [[<Cmd>wincmd l<CR>]], opts)
+end
+vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
+EOF
 
