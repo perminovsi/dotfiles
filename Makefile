@@ -1,6 +1,6 @@
-.PHONY: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim zsh
+.PHONY: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim nvim zsh
 
-all: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim zsh
+all: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim nvim zsh
 
 alacritty:
 	mkdir -p ${HOME}/.config/alacritty
@@ -50,6 +50,9 @@ tmux:
 
 vim:
 	ln -sfv ${HOME}/.dotfiles/vim/.vimrc ${HOME}
+
+nvim:
+	ln -sfv ${HOME}/.dotfiles/nvim/init.vim ${HOME}/.config/nvim
 
 zsh:
 	ln -sfv ${HOME}/.dotfiles/zsh/.zshrc ${HOME}
