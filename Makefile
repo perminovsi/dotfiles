@@ -1,6 +1,6 @@
-.PHONY: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim nvim zsh
+.PHONY: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim nvim zsh rofi
 
-all: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim nvim zsh
+all: alacritty bash conky git mc npm psql ranger scripts sh ssh tmux vim nvim zsh rofi
 
 alacritty:
 	mkdir -p ${HOME}/.config/alacritty
@@ -56,4 +56,8 @@ nvim:
 
 zsh:
 	ln -sfv ${HOME}/.dotfiles/zsh/.zshrc ${HOME}
+
+rofi:
+	mkdir -p ${HOME}/.config/rofi
+	ln -sfv ${HOME}/.dotfiles/rofi/config.rasi ${HOME}/.config/rofi
 
