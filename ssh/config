@@ -1,7 +1,18 @@
 Include scanex_hosts
+Include gpn_hosts
 
 Host yandex
 Hostname 84.201.155.104
 User user
+Port 22
+
+Host vdsina
+Hostname 46.151.31.122
+User root
+Port 22
+
+Host slurm
+Hostname sbox.slurm.io
+User s053351
 Port 22
 

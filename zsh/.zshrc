@@ -85,6 +85,7 @@ plugins=(
     tmux
     zsh-syntax-highlighting
     zsh-autosuggestions
+#     fzf-zsh-plugin
     npm
     node
     docker
@@ -93,6 +94,7 @@ plugins=(
     extract
     colorize
     colored-man-pages
+
     # autojump
     kubectl
     asdf
@@ -127,7 +129,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll='ls -alF'
 alias cls="clear"
-alias x='. ranger'
+alias lf='. ranger'
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
 alias docker-rmi='docker rmi $(docker images -f "dangling=true" -q)'
 alias ls='exa'
@@ -158,3 +160,19 @@ export PATH="$HOME/.poetry/bin:$PATH"
 source <(kubectl completion zsh)
 # alias k=kubectl
 complete -F __start_kubectl k
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/user/.pyenv/versions/miniconda3-4.7.12/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/user/.pyenv/versions/miniconda3-4.7.12/etc/profile.d/conda.sh" ]; then
+#         . "/home/user/.pyenv/versions/miniconda3-4.7.12/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/user/.pyenv/versions/miniconda3-4.7.12/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
+

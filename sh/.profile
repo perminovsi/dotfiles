@@ -32,3 +32,4 @@ export GOBIN=$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 export PATH="$HOME/.poetry/bin:$PATH"
+. "$HOME/.cargo/env"
