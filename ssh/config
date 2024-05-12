@@ -6,6 +6,16 @@ Hostname 84.201.155.104
 User user
 Port 22
 
+Host gispsu
+Hostname 158.160.85.211
+User admin
+Port 22
+
+Host arcgis
+Hostname 158.160.65.206
+User admin
+Port 22
+
 Host vdsina
 Hostname 46.151.31.122
 User root

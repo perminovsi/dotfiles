@@ -128,7 +128,7 @@ colorscheme gruvbox
 " Autocmd settings
 lua << EOF
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
+-- vim.o.completeopt = 'menuone,noselect'
 
 -- luasnip setup
 local luasnip = require 'luasnip'
@@ -137,6 +137,7 @@ local luasnip = require 'luasnip'
 local cmp = require 'cmp'
 cmp.setup {
   completion = {
+    completeopt = 'menu,menuone,noinsert',
     autocomplete = true
     --autocomplete = false
   },
